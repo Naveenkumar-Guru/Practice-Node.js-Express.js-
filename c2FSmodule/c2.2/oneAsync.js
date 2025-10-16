@@ -25,7 +25,7 @@ fs.readFile("Employee.json", "utf-8", (error, data) => {
       if (error) {
         console.log("writeFile error", error);
       } else {
-        console.log("Employee.json data successfully written to naveen.txt");
+        console.log("Employee.json data successfully written to sample.txt");
       }
     });
   }
