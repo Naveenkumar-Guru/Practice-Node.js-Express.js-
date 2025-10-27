@@ -1,0 +1,83 @@
+Root Request
+------------
+Usage:Application Root Request
+Rest URL:http://127.0.0.1:8080/
+Method Type:GET
+Requried Fields:none
+Access Type:Public
+
+User Module API's
+-----------------
+Create
+----------
+Usage:New User Create
+Rest URL:http://127.0.0.1:8080/user/
+Method Type:POST
+Requried Fields:uname,email,loc
+Access Type:Public
+
+Read
+----------
+Usage:fetch all users
+Rest URL:http://127.0.0.1:8080/user/all
+Method Type:GET
+Requried Fields:None
+Access Type:Public
+
+
+Update
+----------
+Usage:Updtae user by uid
+Rest URL:http://127.0.0.1:8080/user/101
+Method Type:PUT
+Requried Fields:uname,email,loc
+Access Type:Public
+
+Delete
+----------
+Usage:Delete user by uid
+Rest URL:http://127.0.0.1:8080/user/101
+Method Type:DELETE
+Requried Fields:None
+Access Type:Public
+
+router.delete("/:pid",(req,resp)=>{
+    let pid=req.params.pid;
+
+})
+
+
+Product Module API's
+-----------------
+Create
+----------
+Usage:New Product Create
+Rest URL:http://127.0.0.1:8080/product/
+Method Type:POST
+Requried Fields:pname,price,qty
+Access Type:Public
+
+Read
+----------
+Usage:fetch all products
+Rest URL:http://127.0.0.1:8080/product/all
+Method Type:GET
+Requried Fields:None
+Access Type:Public
+
+
+Update
+----------
+Usage:Updtae product by pid
+Rest URL:http://127.0.0.1:8080/product/10
+Method Type:PUT
+Requried Fields:pname,price,qty
+Access Type:Public
+
+Delete
+----------
+Usage:Delete product by pid
+Rest URL:http://127.0.0.1:8080/product/10
+Method Type:DELETE
+Requried Fields:None
+Access Type:Public
